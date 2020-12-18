@@ -9,7 +9,8 @@ public enum DaysEnum {
     DAY5(Day5.class),
     DAY6(Day6.class),
     DAY7(Day7.class),
-    DAY8(Day8.class);
+    DAY8(Day8.class),
+    DAY9(Day9.class);
 
     private Day day;
 
