@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 
 public enum DaysEnum {
+    ALL(Day.class),
     DAY1(Day1.class),
     DAY2(Day2.class),
     DAY3(Day3.class),
@@ -14,7 +15,8 @@ public enum DaysEnum {
     DAY10(Day10.class),
     DAY11(Day11.class),
     DAY12(Day12.class),
-    DAY13(Day13.class);
+    DAY13(Day13.class),
+    DAY14(Day14.class);
 
     private Day day;
 
