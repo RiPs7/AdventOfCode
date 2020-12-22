@@ -42,11 +42,14 @@
  */
 public class Main {
 
-    private static final DaysEnum DAY = null;
+    private static final DaysEnum DAY = DaysEnum.ALL;
 
     public static void main(String[] args) {
-        if (DAY == null) {
+        if (DAY == DaysEnum.ALL) {
             for (DaysEnum day : DaysEnum.values()) {
+                if (day == DaysEnum.ALL) {
+                    continue;
+                }
                 System.out.println("----- Running for " + day.name() + " -----");
                 day.run();
                 System.out.println("----------------------------");
