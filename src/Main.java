@@ -42,7 +42,7 @@
  */
 public class Main {
 
-    private static final DaysEnum DAY = DaysEnum.DAY15;
+    private static final DaysEnum DAY = DaysEnum.ALL;
 
     public static void main(String[] args) {
         if (DAY == DaysEnum.ALL) {
