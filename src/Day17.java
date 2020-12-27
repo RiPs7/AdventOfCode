@@ -13,7 +13,7 @@ class Day17 extends Day {
             .map(line -> line.chars().map(i -> i == '#' ? 1 : 0).toArray())
             .toArray(int[][]::new);
         final Engine<?, ?> engine = new Engine3(layer, 6);
-        System.out.println(engine.boot());
+        System.out.println("The are " + engine.boot() + " active cubes after the engine boot");
     }
 
     void part2() throws IOException {
@@ -27,7 +27,7 @@ class Day17 extends Day {
                 .toArray(int[][]::new))
             .toArray(int[][][]::new);
         final Engine<?, ?> engine = new Engine4(layer, 6);
-        System.out.println(engine.boot());
+        System.out.println("The are " + engine.boot() + " active cubes after the engine boot");
     }
 
     private abstract static class Engine<DATA_TYPE, LAYER_TYPE extends Engine.Layer<DATA_TYPE>> {
